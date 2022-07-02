@@ -1,0 +1,70 @@
+.footer-form__slogan {
+	@include font(14px, 700, 1.14, null);
+
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: var(--secondary-title-color);
+}
+
+.footer-form__content {
+	display: flex;
+}
+
+.footer-form__input {
+	width: 358px;
+	height: 50px;
+	padding: 15px 16px;
+
+	background-color: transparent;
+	color: var(--footer-form-color);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	outline: transparent;
+
+	transition: border-color var(--duration) var(--timing-function);
+
+	&:focus {
+		border-color: var(--accent-color);
+	}
+}
+
+.footer-form__button {
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 29px;
+	margin-left: 12px;
+
+	@include font(null, 700, 1.88, 0.06em);
+
+	font-family: inherit;
+	cursor: pointer;
+	background-color: var(--accent-color);
+	color: var(--accent-button-text-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border: transparent;
+	border-radius: 4px;
+
+	transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--light-accent);
+		color: var(--light-accent-secondary);
+	}
+}
+
+.footer-form__icon {
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 28px;
+
+	fill: var(--icon-secondary-color);
+	transition: fill var(--duration) var(--timing-function);
+
+	.footer-form-button:hover &,
+	.footer-form-button:focus & {
+		fill: var(--light-accent-secondary);
+	}
+}

@@ -1,0 +1,51 @@
+.hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-color: var(--hero-background-color);
+}
+
+.hero__container {
+	max-width: 1600px;
+	height: 600px;
+	margin: 0 auto;
+
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero__title {
+	width: 669px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include font(44px, 900, 1.36, 0.06em);
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--secondary-title-color);
+}
+
+.hero__button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 32px;
+
+	@include font(16px, 700, 1.88, 0.06em);
+	cursor: pointer;
+	text-align: center;
+	color: var(--accent-button-text-color);
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 1px solid transparent;
+
+	transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--light-accent);
+		color: var(--light-accent-secondary);
+	}
+}

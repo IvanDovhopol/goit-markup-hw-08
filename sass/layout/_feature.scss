@@ -1,0 +1,34 @@
+.feature {
+	padding-top: 94px;
+}
+
+.feature-list {
+	display: flex;
+}
+
+.feature-list__item {
+	width: 270px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.feature-list__icons {
+	margin-bottom: 30px;
+	height: 120px;
+
+	border-radius: 4px;
+	background-color: var(--feature-bc-icons);
+}
+
+.feature-list__title {
+	@include font(14px, null, 1.14, null);
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.feature-list__desc {
+	@include font(14px, null, 1.71, null);
+	color: var(--all-text-color);
+}
