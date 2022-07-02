@@ -887,10 +887,10 @@ body {
   border-radius: 2px;
   transition: background-color var(--duration) var(--timing-function), border-color var(--duration) var(--timing-function);
 }
-.checkbox-policy:focus + .policy__icon {
+.policy__checkbox:focus + .policy__icon {
   outline: 1px solid #212121;
 }
-.checkbox-policy:checked + .policy__icon {
+.policy__checkbox:checked + .policy__icon {
   background-image: url("../imges/icon-check.svg");
   background-size: contain;
   background-origin: border-box;

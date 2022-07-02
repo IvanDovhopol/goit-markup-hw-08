@@ -134,11 +134,11 @@
 	transition: background-color var(--duration) var(--timing-function),
 		border-color var(--duration) var(--timing-function);
 
-	.checkbox-policy:focus + & {
+	.policy__checkbox:focus + & {
 		outline: 1px solid #212121;
 	}
 
-	.checkbox-policy:checked + & {
+	.policy__checkbox:checked + & {
 		background-image: url('../imges/icon-check.svg');
 		background-size: contain;
 		background-origin: border-box;
