@@ -7,9 +7,6 @@
 .feature-list {
   margin-left: auto;
   margin-right: auto;
-
-  // margin: 0 auto;
-  // display: flex;
 }
 
 .feature-list__item {
@@ -20,17 +17,14 @@
 
     // margin-right: 30px;
   }
-
-  // width: 270px;
 }
 
 .feature-list__icons {
+  width: 100%;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
   background-color: var(--feature-bc-icons);
-
-  // height: 120px;
 }
 
 .feature-list__title {
