@@ -1,3 +1,11 @@
+.company {
+	display: none;
+
+	@include desktop {
+		display: block;
+	}
+}
+
 .company__title {
 	@include font(36px, null, 1.16, null);
 	margin-bottom: 50px;
