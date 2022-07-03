@@ -1,22 +1,37 @@
+.clients {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@include desktop {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+}
+
 .clients__title {
-	@include font(36px, null, 1.16, null);
 	text-align: center;
 	color: var(--primory-title-color);
 	margin-bottom: 50px;
+	@include font(36px, null, 1.16, null);
 }
 
 .partners {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .partners__item {
-	width: 170px;
+	width: 210px;
 	height: 92px;
-	margin-right: 30px;
 
-	&:last-child {
-		margin-right: 0;
+	@include tablet {
+		width: 226px;
+	}
+
+	@include desktop {
+		width: 170px;
 	}
 }
 
@@ -27,7 +42,8 @@
 	border-radius: 4px;
 	border: 1px solid #afb1b8;
 	fill: var(--icon-primory-color);
-	transition: border-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
+	transition: border-color var(--duration) var(--timing-function),
+		fill var(--duration) var(--timing-function);
 
 	&:hover,
 	&:focus {
