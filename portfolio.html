@@ -89,24 +89,48 @@
 						</li>
 					</ul>
 
-					<!-- <h2 class="hiden">Наш продукт</h2>
+					<h2 class="hiden">Наш продукт</h2>
 					<ul class="product list">
 						<li class="product__item">
 							<a href="/" class="product__link link">
 								<div class="product__side">
-									<img
-										src="./imges/photo-portfolio1.jpg"
-										class="product__img"
-										alt=""
-										width="370"
-										height="294"
-									/>
+									<picture>
+										<source
+											srcset="
+												./imges/photo-portfolio1.jpg    1x,
+												./imges/photo-portfolio1@x2.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+
+										<source
+											srcset="
+												./imges/photo-portfolio1-tablet.jpg    1x,
+												./imges/photo-portfolio1-tablet@x2.jpg 2x
+											"
+											media="(min-width: 768px)"
+										/>
+
+										<source
+											srcset="
+												./imges/photo-portfolio1-mob.jpg    1x,
+												./imges/photo-portfolio1-mob@x2.jpg 2x
+											"
+											media="(min-width: 320px)"
+										/>
+
+										<img
+											src="./imges/photo-portfolio1-mob.jpg"
+											class="product__img"
+											alt=""
+										/>
+									</picture>
+
 									<div class="arise">
 										<p class="arise__description">
 											Ресурс предлагает комплексные предложения с разным уровнем
 											функционала и сервисов. Все это позволит посетителю
-											получить исчерпывающие сведения о компании или частном
-											лице.
+											получить исчерпывающие сведения о компании.
 										</p>
 									</div>
 								</div>
@@ -121,11 +145,9 @@
 							<a href="/" class="product__link link">
 								<div class="product__side">
 									<img
-										src="./imges/photo-portfolio2.jpg"
+										src="./imges/photo-portfolio2-mob.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -151,8 +173,6 @@
 										src="./imges/photo-portfolio3.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -176,8 +196,6 @@
 										src="./imges/photo-portfolio4.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -201,8 +219,6 @@
 										src="./imges/photo-portfolio5.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -226,8 +242,6 @@
 										src="./imges/photo-portfolio6.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -253,8 +267,6 @@
 										src="./imges/photo-portfolio7.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -278,8 +290,6 @@
 										src="./imges/photo-portfolio8.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -303,8 +313,6 @@
 										src="./imges/photo-portfolio9.jpg"
 										class="product__img"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<div class="arise">
 										<p class="arise__description">
@@ -321,7 +329,7 @@
 								</div></a
 							>
 						</li>
-					</ul> -->
+					</ul>
 				</div>
 			</section>
 		</main>
