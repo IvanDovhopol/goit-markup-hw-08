@@ -734,20 +734,38 @@ img {
 
 .portfolio__nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__nav {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__nav {
+    margin-bottom: 50px;
+  }
 }
 
-.portfolio__item:not(:last-child) {
+.portfolio__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio__item:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .portfolio__button {
   padding: 6px 22px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
   cursor: pointer;
   text-align: center;
   color: var(--button-text-color);
@@ -755,6 +773,10 @@ img {
   border-radius: 4px;
   border: 1px solid transparent;
   transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 .portfolio__button:hover, .portfolio__button:focus, .portfolio__button.active {
   background-color: var(--accent-color);
