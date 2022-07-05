@@ -3,10 +3,14 @@
 }
 
 .modal-form__title {
-	@include font(20px, 700, 1.15, null);
 	margin-bottom: 12px;
 	text-align: center;
 	color: var(--primory-title-color);
+	@include font(20px, 700, 1.5, null);
+
+	@include desktop {
+		@include font(20px, 700, 1.15, null);
+	}
 }
 
 .modal-form__label {
@@ -57,7 +61,7 @@
 
 	transition: fill var(--duration) var(--timing-function);
 
-	.modal-input:focus + & {
+	.form-field__input:focus + & {
 		fill: var(--accent-color);
 	}
 }
@@ -117,20 +121,22 @@
 }
 
 .policy__label {
-	@include font(14px, null, 1.71, null);
-
-	margin-left: 7px;
+	margin-left: 5px;
 	color: var(--all-text-color);
+	@include font(12px, null, 1.16, null);
+
+	@include desktop {
+		@include font(14px, null, 1.71, null);
+	}
 }
 
 .policy__icon {
 	position: relative;
 
-	width: 16px;
+	min-width: 16px;
 	height: 15px;
 	border: 2px solid #212121;
 	border-radius: 2px;
-
 	transition: background-color var(--duration) var(--timing-function),
 		border-color var(--duration) var(--timing-function);
 

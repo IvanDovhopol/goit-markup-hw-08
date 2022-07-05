@@ -945,6 +945,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 93px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
@@ -957,11 +958,10 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration) var(--timing-function);
@@ -972,6 +972,17 @@ img {
   transform: translate(-50%, -50%) scale(0);
   transition: transform var(--duration) var(--timing-function);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal__close {
   position: absolute;
@@ -979,6 +990,7 @@ img {
   right: 8px;
   width: 30px;
   height: 30px;
+  padding: 6px;
   cursor: pointer;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -994,12 +1006,19 @@ img {
 }
 
 .modal-form__title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.15;
   margin-bottom: 12px;
   text-align: center;
   color: var(--primory-title-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+  }
 }
 
 .modal-form__label {
@@ -1047,7 +1066,7 @@ img {
   transform: translateY(-50%);
   transition: fill var(--duration) var(--timing-function);
 }
-.modal-input:focus + .form-field__icons {
+.form-field__input:focus + .form-field__icons {
   fill: var(--accent-color);
 }
 
@@ -1103,15 +1122,21 @@ img {
 }
 
 .policy__label {
-  font-size: 14px;
-  line-height: 1.71;
-  margin-left: 7px;
+  margin-left: 5px;
   color: var(--all-text-color);
+  font-size: 12px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .policy__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy__icon {
   position: relative;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
