@@ -569,26 +569,53 @@ img {
   background-color: var(--footer-background-color);
 }
 
-.page-footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    justify-content: flex-start;
+  }
 }
 
 .page-footer__about {
-  max-width: 376px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 232px;
   min-height: 112px;
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .page-footer__about {
+    margin: 0;
+    margin-bottom: 60px;
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__about {
+    max-width: 376px;
+    margin: 0;
+    margin-right: 70px;
+    text-align: start;
+  }
 }
 
 .page-footer__logo {
   display: block;
   margin-bottom: 20px;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   transition: color var(--duration) var(--timing-function);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
 }
 .page-footer__logo:hover, .page-footer__logo:focus {
   color: var(--light-accent-secondary);
@@ -608,11 +635,11 @@ img {
 
 .link-address {
   display: block;
-  font-size: 14px;
-  line-height: 1.71;
   font-style: normal;
   color: var(--address-text-color);
   transition: color var(--duration) var(--timing-function);
+  font-size: 14px;
+  line-height: 1.71;
 }
 .link-address:hover {
   color: var(--light-accent-secondary);
@@ -623,29 +650,39 @@ img {
 }
 
 .contacts__link {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--footer-contact-color);
   transition: color var(--duration) var(--timing-function);
+  font-size: 14px;
+  line-height: 1.71;
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
-.slogan {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .slogan {
+    margin-right: 93px;
+  }
 }
 
 .slogan__title {
-  font-size: 14px;
-  line-height: 1.14;
   margin-bottom: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  font-size: 14px;
+  line-height: 1.14;
+}
+@media screen and (min-width: 1200px) {
+  .slogan__title {
+    text-align: start;
+  }
 }
 
 .footer-soc {
   display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer-soc__item {
@@ -674,18 +711,26 @@ img {
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--secondary-title-color);
 }
 
-.footer-form__content {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-form__content {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-form__input {
-  width: 358px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   background-color: transparent;
   color: var(--footer-form-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -697,15 +742,25 @@ img {
 .footer-form__input:focus {
   border-color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+    margin: 0;
+    margin-right: 12px;
+  }
+}
 
 .footer-form__button {
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 29px;
-  margin-left: 12px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 62px 10px 29px;
   font-family: inherit;
   cursor: pointer;
   background-color: var(--accent-color);
@@ -714,6 +769,9 @@ img {
   border: transparent;
   border-radius: 4px;
   transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 .footer-form__button:hover, .footer-form__button:focus {
   background-color: var(--light-accent);
@@ -721,10 +779,13 @@ img {
 }
 
 .footer-form__icon {
-  width: 100%;
-  height: 100%;
-  padding-left: 10px;
-  padding-right: 28px;
+  position: absolute;
+  bottom: 50%;
+  right: 30px;
+  transform: translateY(50%);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
   fill: var(--icon-secondary-color);
   transition: fill var(--duration) var(--timing-function);
 }
