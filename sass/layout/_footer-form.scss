@@ -1,10 +1,13 @@
 .footer-form__slogan {
-	@include font(14px, 700, 1.14, null);
-
 	margin-bottom: 20px;
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--secondary-title-color);
+	@include font(14px, 700, 1.14, null);
+
+	@include desktop {
+		text-align: start;
+	}
 }
 
 .footer-form__content {

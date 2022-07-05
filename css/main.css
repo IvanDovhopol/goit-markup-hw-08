@@ -707,13 +707,18 @@ img {
 }
 
 .footer-form__slogan {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__slogan {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
