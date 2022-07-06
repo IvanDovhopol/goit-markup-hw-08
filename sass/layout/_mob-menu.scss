@@ -1,0 +1,133 @@
+.mob-menu {
+	@media screen and (max-width: 767px) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 1;
+
+		background-color: #ffffff;
+		transform: translate(0);
+
+		&.is-hidden {
+			transform: translate(100%);
+
+			transition: transform 500ms linear;
+		}
+	}
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.mob-menu__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 48px 40px;
+	margin: 0;
+	overflow-y: auto;
+}
+
+.btn__menu--open,
+.btn__menu--close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	padding: 0;
+	margin-left: auto;
+
+	background-color: transparent;
+	border: none;
+
+	&:hover .menu-open__icon,
+	&:focus .menu-open__icon,
+	&:hover .menu-close__icon,
+	&:focus .menu-close__icon {
+		fill: var(--accent-color);
+	}
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.btn__menu--close {
+	margin-bottom: 8px;
+}
+
+.mob-nav {
+	margin-bottom: 50px;
+}
+
+.mob-nav__link {
+	text-align: center;
+	color: var(--nav-text-color);
+	@include font(40px, 500, 1.17, 0.02em);
+}
+
+.mob-nav__link--current {
+	color: var(--accent-color);
+}
+
+.mob-nav__item {
+	margin-bottom: 24px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.mob-contacts {
+	margin-bottom: 64px;
+}
+
+.mob-contacts__item {
+	margin-bottom: 32px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.mob-contacts__link {
+	color: var(--header-contact-color);
+	@include font(24px, 500, 1.16, 0.02em);
+}
+
+.mob-contacts__link--current {
+	color: var(--accent-color);
+	@include font(40px, null, 1.17, null);
+
+	@media screen and (max-width: 428px) {
+		@include font(34px, null, 1.16, null);
+	}
+
+	@media screen and (max-width: 376px) {
+		@include font(24px, null, 1.16, null);
+	}
+}
+
+.mob-soc {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.mob-soc__item {
+	padding-right: 10px;
+	border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+	&:last-child {
+		padding-right: 0;
+		border: none;
+	}
+}
+
+.mob-soc__link {
+	color: var(--accent-color);
+	@include font(18px, 500, 1.22, 0.02em);
+}

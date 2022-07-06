@@ -22,7 +22,7 @@
 	</head>
 	<body>
 		<!-- header -->
-		<!-- <header class="page-header">
+		<header class="page-header">
 			<div class="container page-header__content">
 				<nav class="page-header__nav">
 					<a href="./index.html" class="logo page-header__logo link"
@@ -34,7 +34,7 @@
 							<a href="./index.html" class="navigation__link link">Студия</a>
 						</li>
 						<li class="navigation__item">
-							<a href="./portfolio.html" class="navigation__link link current"
+							<a href="./portfolio.html" class="navigation__link current link"
 								>Портфолио</a
 							>
 						</li>
@@ -59,8 +59,82 @@
 						>
 					</li>
 				</ul>
+
+				<button class="btn btn__menu--open" type="button">
+					<svg class="menu-open__icon" width="40" height="40">
+						<use href="./imges/sprite.svg#icon-open-menu"></use>
+					</svg>
+				</button>
+
+				<!-- mobile-menu -->
+				<div class="mob-menu is-hidden">
+					<button class="btn btn__menu--close" type="button">
+						<svg class="menu-close__icon" width="40" height="40">
+							<use href="./imges/sprite.svg#icon-close-menu"></use>
+						</svg>
+					</button>
+					<div class="container mob-menu__container">
+						<ul class="mob-nav list">
+							<li class="mob-nav__item">
+								<a href="./index.html" class="mob-nav__link link">Студия</a>
+							</li>
+							<li class="mob-nav__item">
+								<a
+									href="./portfolio.html"
+									class="mob-nav__link mob-nav__link--current link"
+									>Портфолио</a
+								>
+							</li>
+							<li class="mob-nav__item">
+								<a href="./index.html" class="mob-nav__link link">Контакты</a>
+							</li>
+						</ul>
+
+						<div class="connect-thumb">
+							<ul class="mob-contacts list">
+								<li class="mob-contacts__item">
+									<a
+										href="tel:+380961111111"
+										class="mob-contacts__link mob-contacts__link--current link"
+										>+38 096 111 11 11</a
+									>
+								</li>
+								<li class="mob-contacts__item">
+									<a
+										href="mailto:info@devstudio.com"
+										class="mob-contacts__link link"
+										>info@devstudio.com</a
+									>
+								</li>
+							</ul>
+
+							<ul class="mob-soc list">
+								<li class="mob-soc__item">
+									<a href="./portfolio.html" class="mob-soc__link link"
+										>Instagram</a
+									>
+								</li>
+								<li class="mob-soc__item">
+									<a href="./portfolio.html" class="mob-soc__link link"
+										>Twitter</a
+									>
+								</li>
+								<li class="mob-soc__item">
+									<a href="./portfolio.html" class="mob-soc__link link"
+										>Facebook</a
+									>
+								</li>
+								<li class="mob-soc__item">
+									<a href="./portfolio.html" class="mob-soc__link link"
+										>LinkedIn</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-		</header> -->
+		</header>
 
 		<!-- portfolio -->
 		<main>
@@ -92,7 +166,7 @@
 					<h2 class="hiden">Наш продукт</h2>
 					<ul class="product list">
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -143,7 +217,7 @@
 							</a>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -195,7 +269,7 @@
 							>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -245,7 +319,7 @@
 							>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -295,7 +369,7 @@
 							>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -345,7 +419,7 @@
 							>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -397,7 +471,7 @@
 							>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -447,7 +521,7 @@
 							>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -497,7 +571,7 @@
 							>
 						</li>
 						<li class="product__item">
-							<a href="/" class="product__link link">
+							<a href="./portfolio.html" class="product__link link">
 								<div class="product__side">
 									<picture>
 										<source
@@ -555,7 +629,7 @@
 		<footer class="page-footer">
 			<div class="page-footer__container container">
 				<div class="page-footer__about">
-					<a class="logo page-footer__logo link" href="./index.html"
+					<a class="logo page-footer__logo link" href="./portfolio.html"
 						><span class="page-footer__logo--secondary-color">Web</span
 						>Studio</a
 					>
@@ -588,7 +662,7 @@
 						<li class="footer-soc__item">
 							<a
 								class="footer-soc__link flex-centered"
-								href="/"
+								href="./portfolio.html"
 								aria-label="ссылка на instagram"
 							>
 								<svg class="icon-instagram" width="20" height="20">
@@ -599,7 +673,7 @@
 						<li class="footer-soc__item">
 							<a
 								class="footer-soc__link flex-centered"
-								href="/"
+								href="./portfolio.html"
 								aria-label="ссылка на twitter"
 							>
 								<svg class="icon-twitter" width="20" height="20">
@@ -610,7 +684,7 @@
 						<li class="footer-soc__item">
 							<a
 								class="footer-soc__link flex-centered"
-								href="/"
+								href="./portfolio.html"
 								aria-label="ссылка на facebook"
 							>
 								<svg class="icon-facebook" width="20" height="20">
@@ -621,7 +695,7 @@
 						<li class="footer-soc__item">
 							<a
 								class="footer-soc__link flex-centered"
-								href="/"
+								href="./portfolio.html"
 								aria-label="ссылка на linkedin"
 							>
 								<svg class="icon-linkedin" width="20" height="20">
@@ -654,5 +728,6 @@
 				</form>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
