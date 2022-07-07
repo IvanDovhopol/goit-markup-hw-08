@@ -1,146 +1,151 @@
 .page-footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
 }
 
 .page-footer__container {
-	@include tablet {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: baseline;
-	}
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
 
-	@include desktop {
-		justify-content: flex-start;
-	}
+  @include desktop {
+    justify-content: flex-start;
+  }
 }
 
 .page-footer__about {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	max-width: 232px;
-	min-height: 112px;
-	margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 232px;
+  min-height: 112px;
+  margin-bottom: 60px;
 
-	@include tablet {
-		margin: 0;
-		margin-bottom: 60px;
-		margin-right: 165px;
-	}
+  @include tablet {
+    margin: 0;
+    margin-bottom: 60px;
+    margin-right: 165px;
+  }
 
-	@include desktop {
-		max-width: 376px;
-		margin: 0;
-		margin-right: 70px;
-		text-align: start;
-	}
+  @include desktop {
+    max-width: 376px;
+    margin: 0;
+    margin-right: 70px;
+    text-align: start;
+  }
 }
 
 .page-footer__logo {
-	display: block;
-	margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 
-	font-family: 'Raleway', sans-serif;
-	color: #ffffff;
-	transition: color var(--duration) var(--timing-function);
-	@include font(26px, 700, 1.19, null);
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  transition: color var(--duration) var(--timing-function);
+  @include font(26px, 700, 1.19, null);
 
-	&:hover,
-	&:focus {
-		color: var(--light-accent-secondary);
-	}
+  &:hover,
+  &:focus {
+    color: var(--light-accent-secondary);
+  }
 }
 
 .page-footer__logo--secondary-color {
-	color: var(--accent-color);
-	transition: color var(--duration) var(--timing-function);
+  color: var(--accent-color);
+  transition: color var(--duration) var(--timing-function);
 
-	.footer-logo:hover &,
-	.footer-logo:focus & {
-		color: var(--light-accent);
-	}
+  .footer-logo:hover &,
+  .footer-logo:focus & {
+    color: var(--light-accent);
+  }
 }
 
 .page-footer__address {
-	margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .link-address {
-	display: block;
-	font-style: normal;
-	color: var(--address-text-color);
-	transition: color var(--duration) var(--timing-function);
-	@include font(14px, null, 1.71, null);
+  display: block;
+  font-style: normal;
+  color: var(--address-text-color);
+  transition: color var(--duration) var(--timing-function);
+  @include font(14px, null, 1.71, null);
 
-	&:hover {
-		color: var(--light-accent-secondary);
-	}
+  &:hover {
+    color: var(--light-accent-secondary);
+  }
 }
 
 .contacts__item:not(:last-child) {
-	margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .contacts__link {
-	color: var(--footer-contact-color);
-	transition: color var(--duration) var(--timing-function);
-	@include font(14px, null, 1.71, null);
+  color: var(--footer-contact-color);
+  transition: color var(--duration) var(--timing-function);
+  @include font(14px, null, 1.71, null);
 
-	&:hover,
-	&:focus {
-		color: var(--accent-color);
-	}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .slogan {
-	@include desktop {
-		margin-right: 93px;
-	}
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    margin-right: 93px;
+  }
 }
 
 .slogan__title {
-	margin-bottom: 20px;
-	text-align: center;
-	text-transform: uppercase;
-	color: var(--secondary-title-color);
-	@include font(14px, null, 1.14, null);
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  @include font(14px, null, 1.14, null);
 
-	@include desktop {
-		text-align: start;
-	}
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .footer-soc {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-soc__item {
-	width: 44px;
-	height: 44px;
-	margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
 
-	&:last-child {
-		margin-right: 0;
-	}
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer-soc__link {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 
-	background-color: rgba(255, 255, 255, 0.1);
-	fill: var(--icon-secondary-color);
-	border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--icon-secondary-color);
+  border-radius: 50%;
 
-	transition: background-color var(--duration) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function);
 
-	&:hover,
-	&:focus {
-		background-color: var(--accent-color);
-	}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

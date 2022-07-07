@@ -887,6 +887,14 @@ img {
   color: var(--accent-color);
 }
 
+.slogan {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .slogan {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .slogan {
     margin-right: 93px;
@@ -910,7 +918,6 @@ img {
 .footer-soc {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer-soc__item {
@@ -1056,10 +1063,11 @@ img {
     margin-bottom: 0;
   }
 }
-
+.portfolio__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
 .portfolio__item:last-child {
   margin-right: 0;
-  margin-bottom: 0;
 }
 
 .portfolio__button {
