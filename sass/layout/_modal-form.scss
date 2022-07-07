@@ -141,7 +141,7 @@
 		border-color var(--duration) var(--timing-function);
 
 	.policy__checkbox:focus + & {
-		outline: 1px solid #212121;
+		border-color: var(--accent-color);
 	}
 
 	.policy__checkbox:checked + & {
@@ -160,6 +160,7 @@
 
 	&:hover,
 	&:focus {
+		outline-color: var(--accent-color);
 		color: var(--light-accent);
 	}
 }
@@ -181,6 +182,7 @@
 
 	&:hover,
 	&:focus {
+		outline-color: var(--accent-color);
 		background-color: var(--light-accent);
 	}
 }

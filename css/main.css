@@ -1375,7 +1375,7 @@ img {
   transition: background-color var(--duration) var(--timing-function), border-color var(--duration) var(--timing-function);
 }
 .policy__checkbox:focus + .policy__icon {
-  outline: 1px solid #212121;
+  border-color: var(--accent-color);
 }
 .policy__checkbox:checked + .policy__icon {
   background-image: url("../imges/icon-check.svg");
@@ -1391,6 +1391,7 @@ img {
   color: var(--accent-color);
 }
 .policy__link:hover, .policy__link:focus {
+  outline-color: var(--accent-color);
   color: var(--light-accent);
 }
 
@@ -1411,5 +1412,6 @@ img {
   border-radius: 4px;
 }
 .modal-form__button:hover, .modal-form__button:focus {
+  outline-color: var(--accent-color);
   background-color: var(--light-accent);
 }/*# sourceMappingURL=main.css.map */
