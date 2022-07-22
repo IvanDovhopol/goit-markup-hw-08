@@ -14,14 +14,7 @@
 
 .gallery {
 	display: flex;
-}
-
-.gallery__item {
-	margin-right: 30px;
-
-	&:last-child {
-		margin-right: 0;
-	}
+	gap: 30px;
 }
 
 .gallery__box {

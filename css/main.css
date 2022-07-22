@@ -463,7 +463,7 @@ img {
 }
 
 .hero__container {
-  max-width: 480px;
+  max-width: 767px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -618,13 +618,7 @@ img {
 
 .gallery {
   display: flex;
-}
-
-.gallery__item {
-  margin-right: 30px;
-}
-.gallery__item:last-child {
-  margin-right: 0;
+  gap: 30px;
 }
 
 .gallery__box {
@@ -918,15 +912,12 @@ img {
 .footer-soc {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .footer-soc__item {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
-}
-.footer-soc__item:last-child {
-  margin-right: 0;
 }
 
 .footer-soc__link {
@@ -1035,11 +1026,19 @@ img {
 
 .portfolio {
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__nav {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1055,7 +1054,6 @@ img {
 }
 
 .portfolio__item {
-  margin-right: 8px;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
@@ -1065,9 +1063,6 @@ img {
 }
 .portfolio__item:nth-last-child(-n+2) {
   margin-bottom: 0;
-}
-.portfolio__item:last-child {
-  margin-right: 0;
 }
 
 .portfolio__button {
@@ -1093,12 +1088,9 @@ img {
 .product {
   display: flex;
   flex-flow: wrap;
-  margin: -15px;
+  gap: 30px;
 }
 
-.product__item {
-  margin: 15px;
-}
 @media screen and (min-width: 768px) {
   .product__item {
     width: 354px;

@@ -1,113 +1,113 @@
 .hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  background-color: var(--hero-background-color);
+	padding-top: 118px;
+	padding-bottom: 118px;
+	background-color: var(--hero-background-color);
 
-  @include desktop {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+	@include desktop {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
 }
 
 .hero__container {
-  max-width: 480px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 767px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
 
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../imges/hero-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../imges/hero-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
-  @include retina {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../imges/hero-mob@x2.jpg);
-  }
+	@include retina {
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../imges/hero-mob@x2.jpg);
+	}
 
-  @include tablet {
-    min-width: 768px;
+	@include tablet {
+		min-width: 768px;
 
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../imges/hero-tablet.jpg);
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../imges/hero-tablet.jpg);
 
-    @include retina {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../imges/hero-tablet@x2.jpg);
-    }
-  }
+		@include retina {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../imges/hero-tablet@x2.jpg);
+		}
+	}
 
-  @include desktop {
-    min-width: 1200px;
-    max-width: 1600px;
-    height: 600px;
+	@include desktop {
+		min-width: 1200px;
+		max-width: 1600px;
+		height: 600px;
 
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../imges/hero.jpg);
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../imges/hero.jpg);
 
-    @include retina {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../imges/hero@x2.jpg);
-    }
-  }
+		@include retina {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../imges/hero@x2.jpg);
+		}
+	}
 }
 
 .hero__title {
-  max-width: 360px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
+	max-width: 360px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
 
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--secondary-title-color);
-  @include font(26px, 900, 1.6, 0.06em);
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--secondary-title-color);
+	@include font(26px, 900, 1.6, 0.06em);
 
-  @include desktop {
-    max-width: 696px;
-    @include font(44px, null, 1.36, null);
-  }
+	@include desktop {
+		max-width: 696px;
+		@include font(44px, null, 1.36, null);
+	}
 }
 
 .hero__button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 32px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 32px;
 
-  @include font(16px, 700, 1.88, 0.06em);
-  cursor: pointer;
-  text-align: center;
-  color: var(--accent-button-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 1px solid transparent;
+	@include font(16px, 700, 1.88, 0.06em);
+	cursor: pointer;
+	text-align: center;
+	color: var(--accent-button-text-color);
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 1px solid transparent;
 
-  transition: background-color var(--duration) var(--timing-function),
-    color var(--duration) var(--timing-function);
+	transition: background-color var(--duration) var(--timing-function),
+		color var(--duration) var(--timing-function);
 
-  &:hover,
-  &:focus {
-    background-color: var(--light-accent);
-    color: var(--light-accent-secondary);
-  }
+	&:hover,
+	&:focus {
+		background-color: var(--light-accent);
+		color: var(--light-accent-secondary);
+	}
 }
